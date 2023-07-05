@@ -21,4 +21,5 @@ Route::get('/', function () {
 
 Route::get('profile', ProfileController::class)->name('profile');
 Route::get('home', [HomeController::class, 'index'])->name('home');
+//untuk dapat mengakses resource employee yang terdapat dalam controller seperti create, edit dan detroy
 Route::resource('employees', EmployeeController::class);
